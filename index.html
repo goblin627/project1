@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body style="font-family: 'Montserrat', sans-serif;">
+
+
+<style>
+ 
+
+.selector {
+	grid-row: row-start / row-end;
+	grid-column: col-start / col-end;
+}
+
+.web-layout1 {
+	display: grid; /*2*/
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 60vh;
+	background-color: pink;
+	border-radius: 7px;
+	background-image: URL('background.jpg');
+	background-size: cover;
+	
+}
+
+.logo {
+	width: 200px;
+    height: 70px;
+    margin-top: 40px;
+	border-radius: 7px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 70px;
+}
+
+.itemlist {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 1100px;
+	margin-right: 1300px;
+    height: 70px;
+    margin-top: 40px;
+	border-radius: 7px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 70px;
+}
+
+.itemContainerlist1 {
+	margin-right: -30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.itemContainerlist2 {
+	margin-left: 200px;
+	display: grid;
+	grid-template-columns: 28% 32% 30%;
+}
+
+.web-layout2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 27.5vh 50vh;
+	background-color: #f0f0f4;
+	border-radius: 7px;
+}
+
+.img1{
+	width: 300px;
+	background-color: red;
+	border-radius: 7px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 328.5px;
+}
+
+.img2{
+	display: grid;
+	grid-template-rows: 30vh 10vh;
+	margin-left: 210px;
+    width: 895px;
+	height: 262px;
+	background-color: #9ba1fa;
+	border-radius: 7px;
+	margin-top: -135px;
+	
+}
+	
+.bookOptions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-tempalte-rows: 10vh;
+	
+}
+
+li {
+	float: left;
+	list-style-type: none;
+}
+
+.faq1 {
+	width: 310px;
+	height: 95px;
+	background-color: #9ba1fa ;
+	border-radius: 7px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 95px;
+}
+
+.faq2 {
+	width: 310px;
+	height: 95px;
+	background-color: ;
+	border-radius: 7px;
+	margin-left: 5px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 95px;
+}
+
+.faq3 {
+	width: 310px;
+	height: 95px;
+	background-color: ;
+	border-radius: 7px;
+	margin-left: 5px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 95px;
+}
+
+.img3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 1015px;
+	height: 190px;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	background-color: ;
+	border-radius: 7px;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 182px;
+	margin-top: -20px;
+}
+
+.web-layout3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 60vh;
+	background-color: pink;
+	border-radius: 7px;
+}
+
+.footerInfo1 {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 65.69px;
+	background-color:;
+	border-radius: 7px;
+}
+
+.footerInfo2 {
+	grid-row-start: 1;
+	grid-column-start: 2;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 65.69px;
+	background-color: ;
+	border-radius: 7px;
+}
+
+.footerInfo3 {
+	grid-row-start: 1;
+	grid-column-start: 3;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 65.69px;
+	background-color: ;
+	border-radius: 7px;
+}
+
+.footerInfo4 {
+	grid-row-start: 1;
+	grid-column-start: 4;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 65.69px;
+	background-color: ;
+	border-radius: 7px;
+}
+
+.footerInfo5 {
+	grid-row-start: 1;
+	grid-column-start: 5;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 65.69px;
+	background-color: ;
+	border-radius: 7px;
+}
+
+.footerInfo6 {
+	background-color: ;
+	border-radius: 7px;
+	grid-row-start: 1;
+	grid-column-start: 6;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 65.69px;
+}
+</style>
+
+<div class="web-layout1">
+	<a href="index_afterLogIn.html" style="text-decoration: none;"><div class="logo">
+		<h3 style="margin-top: -10px; color: blue;"><b><sup><i>SONIC</i></sup>BUS<sub><i>SERVICES</i></sub></b></h3>
+	</div></a>
+	<div class="itemlist">
+		<div class="itemContainerlist1">
+			<div class="myBookings"  style="margin-right: 60px; width: 140px; color: blue;"></div>
+			<a href="Services_1.html" style="text-decoration: none;"><div class="signIn" style="margin-left: -55px; width: 115px; color: blue;">Services</div></a>
+		</div>
+		
+		<div class="itemContainerlist2">
+			<div class="myBookings"style="width; 170px; color: blue;">Bookings</div>
+			<a href="SignUp_LogInPage.html" style="text-decoration: none;"><div class="signIn" style="width: 135px; text-decoration: none; color: blue;">Sign In</div></a>
+		</div>
+	</div>
+</div>
+
+
+<div class="web-layout2">
+	<div class="img2">
+		<!--<div class="bookOptions">
+			<div style="margin-left: 0px;">
+			<label style="grid-column-start: 1; text-align: center; vertical-align: middle; line-height: 65.69px; margin-left: 345px;">One Way</label>
+			<input type="checkbox" name="1way" style="width: 16px; margin-left: 368px; height: 20px;">
+			</div>
+			<div>
+				<label style="grid-column-start: 2; text-align: center; vertical-align: middle; line-height: 65.69px;">Return</label><br>
+				<input type="checkbox" name="1way" style="width: 16px; grid-column-start: 2; height: 20px;">
+			</div>
+		</div>---->
+	<center style="height: 260px;">
+		<div class="bookingFunc" style="margin-top: -16px; height: 263px; width: 735px;">
+			<ul>
+				<li class="faq1" style="display: grid;">
+					<label style="height: 35px; line-height: 55px;">From</label>
+					<input type="text" name="from" placeholder="Enter where you are from"
+					 style="padding: 12px 20px;
+							border: 8px;
+							border-bottom: 2px solid teal;
+							border-radius: 5px;
+							box-sizing: border-box;
+							height: 50px;
+							width: 200px;
+							margin-left: 70px;
+							outline: none;">
+				</li>
+				<li class="faq2" style="display: grid;">
+					<label style="height: 35px; line-height: 55px;">To</label>
+					<input type="text" name="from" placeholder="Enter where you want to go"
+					style="padding: 12px 20px;
+							border: 8px;
+							border-bottom: 2px solid teal;
+							border-radius: 5px;
+							box-sizing: border-box;
+							height: 50px;
+							width: 200px;
+							margin-left: 70px;
+							outline: none;">
+				</li>
+				<li class="faq3" style="display: grid;">
+					<label style="height: 35px; line-height: 55px; width: 160px; margin-inline: auto">Passengers</label>
+						<select style="padding: 12px 20px;
+							border: 8px;
+							border-bottom: 2px solid teal;
+							border-radius: 5px;
+							box-sizing: border-box;
+							height: 50px;
+							width: 200px;
+							margin-left: 70px;
+							outline: none;">
+							<option value="" style="font-family: 'Montserrat', sans-serif;">How many are travelling?</option>
+							<option value="" style="font-family: 'Montserrat', sans-serif;">1</option>
+							<option value="" style="font-family: 'Montserrat', sans-serif;">2</option>
+							<option value="" style="font-family: 'Montserrat', sans-serif;">3</option>
+							<option value="" style="font-family: 'Montserrat', sans-serif;">4</option>
+							<option value="" style="font-family: 'Montserrat', sans-serif;">5</option>
+						</select>
+				</li>
+				<li class="faq3" style="display: grid;">
+					<label style="height: 35px; line-height: 55px;">Date</label>
+					<input type="date" name="from" placeholder="Enter where you are from" 
+					style="padding: 12px 20px;
+							border: 8px;
+							border-bottom: 2px solid teal;
+							border-radius: 5px;
+							box-sizing: border-box;
+							height: 50px;
+							width: 200px;
+							margin-left: 70px;
+							outline: none;">
+				</li>
+			</ul>
+		
+		
+			<div class="submitButton" style="grid-row-start: 2;">
+				<a href="SignUp_LogInPage.html"><button style="margin-top: 25px; font-family: 'Montserrat', sans-serif;
+								color: blue; font-size: 30px; border-radius: 2px; font-weight: 400; outline: none;">Find Ticket</button></a>
+			</div>
+		</div>
+	</center>
+	</div>
+		<div class="img3">
+			<div class="extraContainer1" style="line-height: 30px; width: 299.33px;">
+				<h3 style="line-height: 30px; height: 0px; line-height: 100px; margin-left: -33px;">
+					<b style="margin-right: 22px;">SAFETY IS OUR CONCERN</b></h3><br>
+						<h6 style="width: 285px; line-height: 15px; text-align: justify;">The safety of the customer and their belongings is our number one concern.
+							Find out how we provide security to our customers during the trip</h6>
+				<img src="seatbelt.jpg" style="width: 290px; height: 157px; margin-left: -20px; border-radius: 10px;">
+			</div>
+			<div class="extraContainer2" style="line-height: 30px; width: 299.33px; background-color: ;">
+				<h3 style="line-height: 30px; height: 0px; line-height: 100px; margin-left: -180px;"><b style="margin-right: -84px;">PAYMENT MADE EASY</b></h3><br>
+				<h6 style="width: 285px; line-height: 15px; text-align: justify;">Paying for your trip is now easier than ever with everything being done ovr-the-air, making for a quick and convenient payment. Try it now!</h6>
+				<img src="Online_payment_concept.jpg" style="width: 290px; height: 157px; margin-left: -20px; border-radius: 10px;">
+			</div>
+			<div class="extraContainer3" style="line-height: 30px; width: 299.33px;">
+				<h3 style="line-height: 30px; height: 0px; line-height: 100px; margin-left: -180px;"><b style="margin-right: -16px;">SPECIAL CARE</b></h3><br>
+				<h6 style="width: 285px; line-height: 15px; text-align: justify;">Individuals that require special care are treated unique to everyone else. Find out how!</h6>
+				<img src="illust57-4979.jpg" style="width: 290px; height: 157px; margin-left: -20px; margin-top: 17px; border-radius: 10px;">
+			</div>
+		</div>
+</div>
+
+
+<div class="web-layout3">
+			<div class="footerInfo1">
+				<h3>Popular Routes</h3>
+					<ul>
+						<li style="line-height: 28px;">Iringa to Dar es salaam</li>
+						<li style="line-height: 28px;">Iringa to Mwanza</li>
+						<li style="line-height: 28px;">Iringa to Mbeya</li>
+						<li style="line-height: 28px;">Iringa to Arusha</li>
+						<li style="line-height: 28px;">Iringa to Dodoma</li>
+						<li style="line-height: 28px;">Iringa to Tanga</li>
+						<li style="line-height: 28px;">Iringa to Kilimanjaro</li>
+						<li style="line-height: 28px;">Iringa to Musoma</li>
+						<li style="line-height: 28px;">Iringa to Morogoro</li>
+						<li style="line-heig
+					</ul>
+			</div>
+			<div class="footerInfo2">
+				<h3>Contacts</h3>
+					<ul>
+						<li style="line-height: 30px;"><a href="">Like on Facebook</a></li>
+						<li style="line-height: 30px;"><a href="">Follow on Instagram</a></li>
+						<li style="line-height: 30px;"><a href="">Follow us on Twitter</a></li>
+						<li style="line-height: 30px;"><a href="">Folow on Linkedin</a></li>
+						<li style="line-height: 30px;"><a href="">Follow on Google+</a></li>
+						<li style="line-height: 30px;"><a href="">Send an Email</a></li>
+						<li style="line-height: 30px;"><a href="">Send us an SMS</a></li>
+						<li style="line-height: 30px;"><a href="">Give us a phone call</a></li>
+					</ul>
+			</div>
+			<div class="footerInfo3">
+				<h3>About us</h3>
+					<h5 style="line-height: 15px;">Sonic is successful and thriving thanks to a strong team making it all happen!</h5>
+					<h5 style="line-height: 15px;">To learn more about Sonic and the executive team leading it, <a href="">click here!</a></h5>
+			</div>
+			<div class="footerInfo4">
+				<h3>Official Associations</h3>
+					<ol style="line-height: 35px;">
+						<li style="line-height: 20px;"><a href="">Police</a></li><br>
+						<li style="line-height: 20px;"><a href="">SUMATRA</a></li><br>
+						<li style="line-height: 20px;"><a href="">FDA</a></li><br>
+						<li style="line-height: 20px;"><a href="">TRA</a></li><br>
+					</ol>
+			</div>
+			<div class="footerInfo5"></div>
+			<div class="footerInfo6">
+				<h6 style="margin-top: 339px;">Sonic Bus Services©2021</h6>
+			</div>
+</div>
+</body>
+</html>
